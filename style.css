@@ -65,9 +65,8 @@ time {
     font-style: italic;
 }
 
-.list {
-    list-style: circle;
-    margin-left: 2rem;
+.list li::before {
+    content: url("https://img.icons8.com/nolan/25/checkmark.png");
 }
 
 /* ====================== HEADER ====================== */
@@ -83,7 +82,7 @@ header {
 }
 
 #heading {
-    max-width: 70%;
+    max-width: 65%;
 }
 
 #contact {
@@ -101,7 +100,7 @@ header {
 }
 
 .header-profil {
-    line-height: 1.5rem;
+    line-height: 1.6rem;
     padding-bottom: 1rem;
 }
 
@@ -121,7 +120,6 @@ main {
     align-items: center;
     gap: 1rem;
     position: relative;
-
 }
 
 .dot {
@@ -147,6 +145,7 @@ main {
 }
 
 .experience-item, .formation-item {
+    line-height: 2rem;
     margin-bottom: 1.5rem;
 }
 
@@ -165,8 +164,13 @@ main {
     margin: 1rem 0rem;
 }
 
+.right-element {
+    margin-bottom: 2rem;
+}
+
 .hard-skills-list {
     text-align: center;
+    line-height: 2rem;
 }
 
 .soft-list {
