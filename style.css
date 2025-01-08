@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* ====================== COMMUN ====================== */
+/* ==================================================== */
+
+html {
+    --color-primary: #8D9AE7;
+    --color-secondary: white;
+    --color-thirly: #F2F2F2;
+}
+
+body {
+    font-family: "Hubot Sans", sans-serif;
+    max-width: 1100px;
+    padding: 0 2rem;
+    margin: 2rem auto;
+}
+
+h1, h2 {
+    color: var(--color-primary);
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+    border-bottom: solid 0.1rem var(--color-primary);
+}
+
+h2 {
+    font-size: 1.5rem;
+
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    display: inline-block;
+
+    padding: 0.3rem 1.5rem 0.3rem 4rem;
+    margin: 1rem 0;
+}
+
+time {
+    margin-right: 1rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.list {
+    list-style: circle;
+    margin-left: 2rem;
+}
+
+/* ====================== HEADER ====================== */
+/* ==================================================== */
+
+header {
+    border-bottom: solid 0.2rem var(--color-primary);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+#heading {
+    max-width: 70%;
+}
+
+#contact {
+    text-align: end;
+    background-color: var(--color-thirly);
+    border-top-left-radius: 48%;
+    border-bottom-left-radius: 48%;
+
+    padding: 1rem 1rem 1rem 8rem;
+    margin: 1rem 0rem;
+}
+
+.contact-me {
+    padding-bottom: 1rem;
+}
+
+.header-profil {
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+/* ====================== MAIN ====================== */
+/* ================================================== */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:0 1rem;
+}
+
+.main-title {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+
+}
+
+.dot {
+    background-color: var(--color-primary);
+    border-radius: 50px;
+    width: 15px;
+    height: 15px;
+}
+
+/* -------------------- LEFT MAIN -------------------- */
+/* --------------------------------------------------- */
+
+#left-main {
+    line-height: 1.5rem;
+    max-width: 60%;
+    margin: 1rem;
+}
+
+.experience-container, .formation-container {
+    border-right: solid 0.1rem var(--color-primary);
+    padding-right: 1.5rem;
+    box-sizing: border-box;
+}
+
+.experience-item, .formation-item {
+    margin-bottom: 1.5rem;
+}
+
+
+/* -------------------- RIGHT MAIN -------------------- */
+/* ---------------------------------------------------- */
+
+#right-main {
+    text-align: end;
+    line-height: 1.5rem;
+    background-color: var(--color-thirly);
+    background-position: 25% 70%;
+
+    max-width: 340px;
+    padding: 1rem;
+    margin: 1rem 0rem;
+}
+
+.hard-skills-list {
+    text-align: center;
+}
+
+.soft-list {
+    text-align: center;
+}
+
+@media (width < 1140px) {
+    h1 {
+        padding: 1rem;
+    }
+
+    header {
+        text-align: center;
+        justify-content: center;
+    }
+
+    #heading {
+        max-width: 100%;
+    }
+    
+    #contact {
+        border-radius: 20px;
+    
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1rem;
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .contact-me {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+@media (width < 1100px) {
+    main {
+        justify-content: center;
+    }
+
+    h4 {
+        border-radius: 20px;
+        padding: 0.3rem 4rem;
+    }
+
+    .main-title {
+        justify-content: center;
+    }
+
+    .dot {
+        display: none;
+    }
+
+    #left-main {
+        padding-right: 0;
+        max-width: 100%;
+    }
+    
+    .experience-container, .formation-container  {
+        border: none;
+    }
+
+    #right-main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 3rem;
+
+        text-align: center;
+        border-radius: 20px;
+        max-width: 100%;
+    }
+    .right-element {
+        max-width: 50%;
+    }
+}
+
+@media (width < 780px) {
+    #right-main {
+        justify-content: center;
+        gap: 1rem;
+    }
+    .right-element {
+        max-width: 90%;
+    }
+}
