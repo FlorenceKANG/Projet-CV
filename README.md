@@ -7,12 +7,12 @@ Réalisation d'une interface statique et responsive.
 
 ## Résultat Desktop
 
-![CV en version desktop](/docs/img/cv-desktop.jpeg)
+![CV en version desktop](/img/cv-desktop.jpeg)
 
 ## Résultat Tablet
 
-![CV en version tablet](/docs/img/cv-tablet.png)
+![CV en version tablet](/img/cv-tablet.png)
 
 ## Résultat Mobile
 
-![CV en version mobile](/docs/img/cv-mobile.png)
+![CV en version mobile](/img/cv-mobile.png)
