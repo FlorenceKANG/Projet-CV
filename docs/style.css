@@ -6,7 +6,7 @@
 html {
   --color-primary: #8d9ae7;
   --color-secondary: white;
-  --color-thirly: #f2f2f2;
+  --color-thirly: #f2f2f2a9;
 }
 
 body {
@@ -266,6 +266,15 @@ main {
 }
 
 @media (width < 780px) {
+  body {
+    padding: 0 0.4rem;
+  }
+
+  .experience-container,
+  .formation-container {
+    padding-right: 0;
+  }
+
   #right-main {
     justify-content: center;
     gap: 1rem;
