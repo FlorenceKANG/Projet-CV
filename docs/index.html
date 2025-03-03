@@ -5,31 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mon Profil CV</title>
 
+    <!-- Reset CSS -->
     <link rel="stylesheet" href="reset.css" />
+
+    <!-- BULMA -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
     />
+
+    <!-- Fichier CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header id="heading">
-      <h1 class="header-title">Florence KANG</h1>
-      <h2 class="header-subtitle">Développeur Web Fullstack</h2>
+    <!-- En tête -->
+    <header
+      class="heading is-flex is-flex-wrap-wrap is-flex-direction-column px-4 pb-5 mb-4"
+    >
+      <h1 class="title is-1 p-3 has-text-right">Florence KANG</h1>
+      <h2 class="subtitle is-3 px-6 py-2">Développeur Web Fullstack</h2>
       <div class="header-background hidden"></div>
-      <p class="header-text">
-        Dans le cadre d’une reconversion professionnelle, j’ai décidé de relever
-        le défi en m’engageant dans la formation de Développeur Web Fullstack
-        proposée par l’école O’clock. Passionnée par les technologies et
-        l’innovation, je souhaite mettre mes compétences acquises au service de
-        projets ambitieux, tout en continuant à évoluer professionnellement et à
-        apporter de la valeur aux équipes avec lesquelles je collaborerai.
+      <p class="has-text-justified px-4">
+        Passionnée par le développement web et les nouvelles technologies, je me
+        suis lancée dans une reconversion professionnelle en suivant la
+        formation intensive de Développeur Web Fullstack chez O’clock. Forte de
+        compétences techniques solides et d’une expérience en gestion de projet,
+        je suis motivée à intégrer une équipe dynamique où je pourrai contribuer
+        activement au développement d’applications web performantes
       </p>
 
-      <section class="right-element header-hidden" id="header-contact">
-        <h5>Contact</h5>
+      <!-- Contact caché si width > 1100px -->
+      <section class="section header-contact header-hidden">
+        <h5 class="is-size-5 tag">Contact</h5>
 
-        <address class="header-contact-me">
+        <address class="is-flex is-flex-wrap-wrap is-justify-center is-gap-2">
           <a href="tel:+33649956890"
             >06.49.95.68.90
             <img src="https://img.icons8.com/nolan/32/phone.png" alt="phone" />
@@ -50,10 +59,8 @@
           </a>
         </address>
 
-        <div class="social">
-          <a
-            href="https://www.linkedin.com/in/florence-kang-425751194"
-            target="_blank"
+        <div class="mt-4">
+          <a href="https://www.linkedin.com/in/florencekang" target="_blank"
             ><img
               src="https://img.icons8.com/nolan/40/linkedin.png"
               alt="linkedin"
@@ -64,39 +71,57 @@
         </div>
       </section>
     </header>
-    <main>
-      <section id="left-main">
-        <div id="experience">
-          <div class="main-title">
-            <h3>Work Experience</h3>
+
+    <!-- Corps -->
+    <main
+      class="columns is-flex is-flex-wrap-wrap is-justify-space-between pb-4"
+    >
+      <!-- La partie gauche -->
+      <section class="left-main">
+        <!-- Expérience -->
+        <div>
+          <div class="left-title">
+            <h3 class="subtitle is-3">Experience</h3>
             <div class="dot"></div>
           </div>
-          <div class="experience-container">
-            <div class="experience-item">
-              <h4><time datetime="2025-02">2025/02</time> Développeur Web</h4>
+          <div class="block left-container pr-4">
+            <div class="left-item">
+              <h4 class="is-size-4">
+                <time datetime="2025-02">2025/02</time> Développeur Web
+                Front-end
+              </h4>
               <p>
-                <span class="bold">Projet Apothéose</span> - Formation Ecole
-                O'clock
+                <span class="has-text-weight-bold">Projet La Pince</span> -
+                Ecole O'clock - Téléprésentiel
               </p>
               <p>
-                Réalisation d’une application web en méthode agile (SCRUM), de
-                la conception au déploiement
+                Réalisation d’une application web de gestion de finances
+                personnelles en méthode agile (SCRUM), de la conception au
+                déploiement
               </p>
               <ul class="list">
                 <li>
-                  Analyse des besoins et création des wireframes / maquettes
+                  Analyse des besoins fonctionnels et rédaction des user stories
                 </li>
-                <li>Développement Front-end et Back-end</li>
-                <li>Gestion des API REST</li>
-                <li>Mise en place d'une base de données relationnelle</li>
+                <li>Modélisation de la base de données avec MERISE</li>
+                <li>Création des wireframes / maquettes avec Figma</li>
+                <li>Gestion des tâches avec Github Projects</li>
+                <li>
+                  Intégration des interfaces en React.js et utilisation de Bulma
+                </li>
+                <li>Consommation des API développées en back-end</li>
+                <li>
+                  Mise en place d'une base de données relationnelle en local
+                </li>
+                <li>Tests unitaires et déploiement</li>
               </ul>
             </div>
-            <div class="experience-item">
-              <h4>
+            <div class="left-item">
+              <h4 class="is-size-4">
                 Depuis <time datetime="2021-11">2021/11</time> Vendeuse en
                 prêt-à-porter
               </h4>
-              <p>Société d'interentreprises d'habillement - JST FOR MY</p>
+              <p>Commerce d'interentreprises d'habillement - JST FOR MY</p>
               <ul class="list">
                 <li>Accueil, conseil client et gestion des commandes</li>
                 <li>Gérer les stocks en équipe</li>
@@ -105,56 +130,63 @@
           </div>
         </div>
 
-        <div id="formation">
-          <div class="main-title">
-            <h3>Education</h3>
+        <!-- Formation et diplôme -->
+        <div>
+          <div class="left-title">
+            <h3 class="subtitle is-3">Formation et Diplôme</h3>
             <div class="dot"></div>
           </div>
-          <div class="formation-container">
-            <div class="formation-item">
-              <h4>
+          <div class="left-container pr-4">
+            <div class="left-item">
+              <h4 class="is-size-4">
                 <time datetime="2024-09">2024/09</time>-
                 <time datetime="2025-04">2025/04</time> Ecole O'clock
               </h4>
               <p>
-                <span class="bold">Formation en Téléprésentiel</span> -
-                Libellisée Grande école du numérique
+                Formation en Téléprésentiel - Libellisée Grande école du
+                numérique
               </p>
               <ul class="list">
-                <li>
-                  Titre professionnel : Développeur Web et Web Mobile (niveau 5)
+                <li class="has-text-weight-bold">
+                  Titre professionnel de niveau V Développeur Web et Web Mobile
                 </li>
-                <li>
-                  Modules principaux : HTML5 / CSS3 / JavaSript / Node.js / API
-                  / React / Base de Données
-                </li>
-                <li>
-                  Projet final (Apothéose) : Conception et déploiement d’une
-                  application web en équipe
-                </li>
+                <li>5 mois de cours théorique</li>
+                <li>1 mois de projet de fin de formation</li>
                 <li>2 mois de stage professionnel</li>
               </ul>
             </div>
-            <div class="formation-item">
-              <h4>
+            <div class="left-item">
+              <h4 class="is-size-4">
                 <time datetime="2024-09">2024/09</time>-
                 <time datetime="2025-01">2024/01</time>Plateforme Opquast
               </h4>
-              <p class="italic">
+              <p class="is-italic">
                 Obtention du certification - Intégrer les règles et le
                 vocabulaire assurance qualité web dans sa pratique
                 professionnelle
+              </p>
+            </div>
+            <div class="left-item">
+              <h4 class="is-size-4">
+                <time datetime="2024-09">2019</time>-
+                <time datetime="2025-01">2020</time>IUT de Créteil-Vitry
+              </h4>
+              <p class="is-italic">
+                Obtention du diplôme - Licence professionnelle Chimie, Analyse
+                et Contrôle des matières premières et des produits formulés
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="right-main">
-        <div class="right-element hidden" id="contact">
-          <h5>Contact</h5>
+      <!-- La partie droite -->
+      <section class="right-main m-4 p-4">
+        <!-- Contact caché si width < 1100px -->
+        <div class="right-element mb-4 hidden">
+          <h5 class="is-size-5 tag">Contact</h5>
 
-          <address class="contact-me">
+          <address class="is-flex is-flex-direction-column">
             <a href="tel:+33649956890"
               >06.49.95.68.90
               <img
@@ -178,10 +210,8 @@
             </a>
           </address>
 
-          <div class="social">
-            <a
-              href="https://www.linkedin.com/in/florence-kang-425751194"
-              target="_blank"
+          <div class="mt-4">
+            <a href="https://www.linkedin.com/in/florencekang" target="_blank"
               ><img
                 src="https://img.icons8.com/nolan/40/linkedin.png"
                 alt="linkedin"
@@ -194,62 +224,67 @@
           </div>
         </div>
 
-        <div class="right-element" id="hard-skills">
-          <h5>Hard skills</h5>
-          <ul class="list hard-skills-list">
+        <!-- Hards skills -->
+        <div class="right-element mb-4">
+          <h5 class="is-size-5 tag">Hard skills</h5>
+          <ul class="list has-text-left">
             <li>
-              Technologie web :
-              <p>HTML5 / CSS3 / JavaScript / TypeScript / React</p>
-              <p>Node.js / Express / Docker</p>
-              <p>PostgreSQL / Sequelize</p>
+              <span class="has-text-weight-bold">Languages & Frameworks :</span>
+              HTML5, CSS3, Javascript, React, Typescript, Node.js
             </li>
             <li>
-              Outils et méthodes :
-              <p>Gestion de projet (kanban, user stories, wireframes)</p>
-              <p>MERISE (MCD, MLD, MPD)</p>
-              <p>Versionning avec Git/Github</p>
-              <p>Design et prototype: Figma, moteur de template EJS</p>
+              <span class="has-text-weight-bold">Bases de données :</span>
+              postgreSQL, Sequelize
+            </li>
+            <li>
+              <span class="has-text-weight-bold">Outils & Méthodologies :</span>
+              Git/GitHub, MERISE (MCD, MLD, MPD), Docker, Méthode Agile (SCRUM)
+            </li>
+            <li>
+              <span class="has-text-weight-bold">Design & Prototypage :</span>
+              Figma, EJS (moteur de template)
             </li>
           </ul>
         </div>
 
-        <div class="right-element" id="soft-skills">
-          <h5>Soft skills</h5>
-          <ul class="soft-list">
+        <!-- Softs skills -->
+        <div class="right-element mb-4">
+          <h5 class="is-size-5 tag">Soft skills</h5>
+          <ul class="has-text-left">
             <li>
-              Travail en équipe et en autonomie
               <img
                 src="https://img.icons8.com/nolan/30/connected-people.png"
                 alt="connected-people"
               />
+              Travail en équipe et en autonomie
             </li>
             <li>
-              Flexibilité et adaptabilité
               <img
                 src="https://img.icons8.com/nolan/30/circular-arrows.png"
                 alt="circular-arrows"
               />
+              Flexibilité et adaptabilité
             </li>
             <li>
-              Organisation et planification
               <img
                 src="https://img.icons8.com/nolan/30/overtime.png"
                 alt="overtime"
               />
+              Organisation et planification
             </li>
             <li>
-              Sens du détail
               <img
                 src="https://img.icons8.com/nolan/30/fine-print.png"
                 alt="fine-print"
               />
+              Sens du détail
             </li>
             <li>
-              Capacité d'écoute
               <img
                 src="https://img.icons8.com/nolan/30/voice-recognition-scan.png"
                 alt="voice-recognition-scan"
               />
+              Capacité d'écoute
             </li>
           </ul>
         </div>
