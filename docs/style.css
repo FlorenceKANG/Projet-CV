@@ -33,12 +33,9 @@ body {
   margin: 1rem 0;
 }
 
-time {
-  margin-right: 1rem;
-}
-
 .list li::before {
-  content: url("https://img.icons8.com/nolan/25/checkmark.png");
+  content: url("https://img.icons8.com/nolan/20/checkmark.png");
+  margin-right: 4px;
 }
 
 /* ====================== HEADER ====================== */
@@ -68,6 +65,7 @@ time {
   border-radius: 50px;
   width: 15px;
   height: 15px;
+  margin-bottom: 15px;
 }
 
 /* -------------------- LEFT MAIN -------------------- */
