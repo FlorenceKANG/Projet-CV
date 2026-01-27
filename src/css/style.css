@@ -1,0 +1,268 @@
+/* ====================== COMMUN ====================== */
+/* ==================================================== */
+
+:root {
+  font-family: "Inter", sans-serif;
+  max-width: 1190px;
+  min-height: 1684px;
+  margin: 0 auto;
+
+  --color-primary: #8d9ae7;
+  --color-white: white;
+  --color-gray: #f6f6f6;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  height: 100dvh;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-primary);
+  line-height: normal;
+}
+
+p,
+a,
+li {
+  font-size: 24px;
+  font-weight: 300;
+  color: black;
+  line-height: normal;
+}
+
+h1 {
+  font-size: 64px;
+  text-align: end;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 300;
+  margin-left: 32px;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 28px;
+  font-weight: 600;
+  color: black;
+  line-height: normal;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.list li::before {
+  content: url("https://img.icons8.com/nolan/20/checkmark.png");
+  margin: 0px 4px;
+}
+
+.dot {
+  background-color: var(--color-primary);
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.reverse {
+  color: white;
+  background-color: var(--color-primary);
+  text-align: end;
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
+  padding: 8px 26px;
+}
+
+/* ====================== HEADER ====================== */
+/* ==================================================== */
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px 32px;
+  position: relative;
+  border-bottom: solid 1px var(--color-primary);
+}
+
+.heading-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.heading-background {
+  background-color: var(--color-gray);
+  border-radius: 0 100px 100px 0;
+  width: 438px;
+  height: 226px;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  z-index: -99;
+}
+
+.heading-content.card {
+  align-items: center;
+  padding: 16px;
+  border-radius: 20px;
+  box-shadow: #8d9ae74d 0px 2px 8px 0px;
+}
+
+.heading-content-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.heading-content-contact-item {
+  display: flex;
+  gap: 12px;
+}
+
+/* ====================== MAIN ====================== */
+/* ================================================== */
+
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 0px 24px 24px 24px;
+  height: 100%;
+}
+
+/* -------------------- LEFT MAIN -------------------- */
+/* --------------------------------------------------- */
+
+.content-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.content-left-block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.content-left-block-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
+.content-left-block-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 4px;
+  border-right: solid 1px var(--color-primary);
+}
+
+.block-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+}
+
+/* -------------------- RIGHT MAIN -------------------- */
+/* ---------------------------------------------------- */
+
+.content-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+  min-width: 420px;
+  background-color: var(--color-gray);
+  padding: 16px 0px 16px 24px;
+}
+
+.content-right-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.content-right-block-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  margin-right: 16px;
+}
+
+ul.content-right-block-body {
+  align-items: flex-start;
+}
+
+/* ------------------  MEDIA QUERIES ------------------ */
+/* ---------------------------------------------------- */
+
+@media (width > 1024px) {
+  .heading-content.card {
+    display: none;
+  }
+}
+
+@media (width < 1024px) {
+  .dot,
+  .hidden {
+    display: none;
+  }
+  .reverse {
+    border-radius: 60px;
+  }
+  .heading,
+  .heading-content {
+    align-items: center;
+  }
+  .heading-content p {
+    text-align: center;
+  }
+  .content {
+    flex-wrap: wrap;
+  }
+  .content-left-block-title {
+    justify-content: center;
+  }
+  .content-left-block-body {
+    border-right: none;
+  }
+  .content-right,
+  .content-right-block {
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media (width < 788px) {
+  .heading-content-contact-item {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
