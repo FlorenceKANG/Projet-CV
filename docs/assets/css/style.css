@@ -256,11 +256,15 @@ ul.content-right-block-body {
   .content-right,
   .content-right-block {
     align-items: center;
-    width: 100%;
+    min-width: 100%;
   }
 }
 
 @media (width < 788px) {
+  h1,
+  h2 {
+    text-align: center;
+  }
   .heading-content-contact-item {
     justify-content: center;
     flex-wrap: wrap;
