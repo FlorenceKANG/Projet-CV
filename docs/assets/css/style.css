@@ -147,7 +147,6 @@ ul {
   justify-content: center;
   gap: 16px;
   margin: 0px 24px 24px 24px;
-  height: 100%;
 }
 
 /* -------------------- LEFT MAIN -------------------- */
@@ -197,8 +196,9 @@ ul {
   align-items: flex-end;
   gap: 16px;
   min-width: 420px;
-  background-color: var(--color-gray);
+  min-height: fit-content;
   padding: 16px 0px 16px 24px;
+  background-color: var(--color-gray);
 }
 
 .content-right-block {
