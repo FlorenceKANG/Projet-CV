@@ -6,8 +6,9 @@
   max-width: 1190px;
   min-height: 1684px;
   margin: 0 auto;
+  background-color: white;
 
-  --color-primary: #8d9ae7;
+  --color-primary: #6348a3;
   --color-white: white;
   --color-gray: #f6f6f6;
 }
@@ -66,9 +67,21 @@ ul {
   gap: 4px;
 }
 
+.list li {
+  position: relative;
+  padding-left: 28px;
+}
+
 .list li::before {
-  content: url("https://img.icons8.com/nolan/20/checkmark.png");
-  margin: 0px 4px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%236348A3' d='M10 16.4L6 12.4L7.4 11L10 13.6L16.6 7L18 8.4L10 16.4Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .dot {
@@ -89,6 +102,19 @@ ul {
   border-top-left-radius: 60px;
   border-bottom-left-radius: 60px;
   padding: 8px 26px;
+}
+
+.icons {
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 50%;
+  padding: 6px;
+}
+
+.align {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 /* ====================== HEADER ====================== */
@@ -216,7 +242,7 @@ ul {
   margin-right: 16px;
 }
 
-ul.content-right-block-body {
+.start {
   align-items: flex-start;
 }
 
