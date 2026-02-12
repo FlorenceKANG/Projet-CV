@@ -232,6 +232,7 @@ ul {
   flex-direction: column;
   align-items: flex-end;
   gap: 16px;
+  width: 95%;
 }
 
 .content-right-block-body {
@@ -240,6 +241,7 @@ ul {
   align-items: flex-end;
   gap: 8px;
   margin-right: 16px;
+  width: 100%;
 }
 
 .start {
