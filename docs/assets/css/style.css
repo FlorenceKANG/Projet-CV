@@ -213,6 +213,17 @@ ul {
   padding: 8px;
 }
 
+.list-links {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.list-links-item {
+  display: flex;
+  align-items: center;
+}
+
 /* -------------------- RIGHT MAIN -------------------- */
 /* ---------------------------------------------------- */
 
