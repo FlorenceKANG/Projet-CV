@@ -21,10 +21,10 @@
   </head>
   <body>
     <!-- En tête -->
-    <header class="heading">
-      <div class="heading-background hidden"></div>
+    <header>
+      <div class="background hidden"></div>
       <h1>Florence KANG</h1>
-      <div class="heading-content">
+      <hgroup class="flex-col gap-12">
         <h2>Développeuse React/Next.js - Front-End & Mobile</h2>
         <p>
           Développeuse JavaScript spécialisée en React.js, Next.js et React
@@ -34,15 +34,47 @@
           utilisateur, je conçois des interfaces maintenables, performantes et
           adaptées aux besoins métier.
         </p>
-      </div>
+      </hgroup>
 
       <!-- Contact caché si width > 1024px -->
-      <div class="heading-content card">
+      <article class="card">
         <h2 class="">Contact</h2>
-        <div class="heading-content-contact">
-          <div class="heading-content-contact-item">
-            <a href="tel:+33649956890" class="align"
-              >06.49.95.68.90
+        <div>
+          <a href="tel:+33649956890" class="align"
+            >06.49.95.68.90
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="icons"
+            >
+              <path
+                d="M19.95 21C17.8667 21 15.8083 20.5458 13.775 19.6375C11.7417 18.7292 9.89167 17.4417 8.225 15.775C6.55833 14.1083 5.27083 12.2583 4.3625 10.225C3.45417 8.19167 3 6.13333 3 4.05C3 3.75 3.1 3.5 3.3 3.3C3.5 3.1 3.75 3 4.05 3H8.1C8.33333 3 8.54167 3.07917 8.725 3.2375C8.90833 3.39583 9.01667 3.58333 9.05 3.8L9.7 7.3C9.73333 7.56667 9.725 7.79167 9.675 7.975C9.625 8.15833 9.53333 8.31667 9.4 8.45L6.975 10.9C7.30833 11.5167 7.70417 12.1125 8.1625 12.6875C8.62083 13.2625 9.125 13.8167 9.675 14.35C10.1917 14.8667 10.7333 15.3458 11.3 15.7875C11.8667 16.2292 12.4667 16.6333 13.1 17L15.45 14.65C15.6 14.5 15.7958 14.3875 16.0375 14.3125C16.2792 14.2375 16.5167 14.2167 16.75 14.25L20.2 14.95C20.4333 15.0167 20.625 15.1375 20.775 15.3125C20.925 15.4875 21 15.6833 21 15.9V19.95C21 20.25 20.9 20.5 20.7 20.7C20.5 20.9 20.25 21 19.95 21Z"
+                fill="#FFFFFF"
+              />
+            </svg>
+          </a>
+          <a href="mailto:fkang@outlook.fr" class="align"
+            >fkang@outlook.fr
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="icons"
+            >
+              <path
+                d="M4 20C3.45 20 2.97917 19.8042 2.5875 19.4125C2.19583 19.0208 2 18.55 2 18V6C2 5.45 2.19583 4.97917 2.5875 4.5875C2.97917 4.19583 3.45 4 4 4H20C20.55 4 21.0208 4.19583 21.4125 4.5875C21.8042 4.97917 22 5.45 22 6V18C22 18.55 21.8042 19.0208 21.4125 19.4125C21.0208 19.8042 20.55 20 20 20H4ZM12 13L20 8V6L12 11L4 6V8L12 13Z"
+                fill="#FFFFFF"
+              />
+            </svg>
+          </a>
+          <a>
+            <address class="align">
+              93000, BOBIGNY
               <svg
                 width="30"
                 height="30"
@@ -52,102 +84,65 @@
                 class="icons"
               >
                 <path
-                  d="M19.95 21C17.8667 21 15.8083 20.5458 13.775 19.6375C11.7417 18.7292 9.89167 17.4417 8.225 15.775C6.55833 14.1083 5.27083 12.2583 4.3625 10.225C3.45417 8.19167 3 6.13333 3 4.05C3 3.75 3.1 3.5 3.3 3.3C3.5 3.1 3.75 3 4.05 3H8.1C8.33333 3 8.54167 3.07917 8.725 3.2375C8.90833 3.39583 9.01667 3.58333 9.05 3.8L9.7 7.3C9.73333 7.56667 9.725 7.79167 9.675 7.975C9.625 8.15833 9.53333 8.31667 9.4 8.45L6.975 10.9C7.30833 11.5167 7.70417 12.1125 8.1625 12.6875C8.62083 13.2625 9.125 13.8167 9.675 14.35C10.1917 14.8667 10.7333 15.3458 11.3 15.7875C11.8667 16.2292 12.4667 16.6333 13.1 17L15.45 14.65C15.6 14.5 15.7958 14.3875 16.0375 14.3125C16.2792 14.2375 16.5167 14.2167 16.75 14.25L20.2 14.95C20.4333 15.0167 20.625 15.1375 20.775 15.3125C20.925 15.4875 21 15.6833 21 15.9V19.95C21 20.25 20.9 20.5 20.7 20.7C20.5 20.9 20.25 21 19.95 21Z"
+                  d="M12 12C12.55 12 13.0208 11.8042 13.4125 11.4125C13.8042 11.0208 14 10.55 14 10C14 9.45 13.8042 8.97917 13.4125 8.5875C13.0208 8.19583 12.55 8 12 8C11.45 8 10.9792 8.19583 10.5875 8.5875C10.1958 8.97917 10 9.45 10 10C10 10.55 10.1958 11.0208 10.5875 11.4125C10.9792 11.8042 11.45 12 12 12ZM12 22C9.31667 19.7167 7.3125 17.5958 5.9875 15.6375C4.6625 13.6792 4 11.8667 4 10.2C4 7.7 4.80417 5.70833 6.4125 4.225C8.02083 2.74167 9.88333 2 12 2C14.1167 2 15.9792 2.74167 17.5875 4.225C19.1958 5.70833 20 7.7 20 10.2C20 11.8667 19.3375 13.6792 18.0125 15.6375C16.6875 17.5958 14.6833 19.7167 12 22Z"
                   fill="#FFFFFF"
                 />
               </svg>
-            </a>
-            <a href="mailto:fkang@outlook.fr" class="align"
-              >fkang@outlook.fr
-              <svg
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="icons"
-              >
-                <path
-                  d="M4 20C3.45 20 2.97917 19.8042 2.5875 19.4125C2.19583 19.0208 2 18.55 2 18V6C2 5.45 2.19583 4.97917 2.5875 4.5875C2.97917 4.19583 3.45 4 4 4H20C20.55 4 21.0208 4.19583 21.4125 4.5875C21.8042 4.97917 22 5.45 22 6V18C22 18.55 21.8042 19.0208 21.4125 19.4125C21.0208 19.8042 20.55 20 20 20H4ZM12 13L20 8V6L12 11L4 6V8L12 13Z"
-                  fill="#FFFFFF"
-                />
-              </svg>
-            </a>
-            <a>
-              <address class="align">
-                93000, BOBIGNY
-                <svg
-                  width="30"
-                  height="30"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="icons"
-                >
-                  <path
-                    d="M12 12C12.55 12 13.0208 11.8042 13.4125 11.4125C13.8042 11.0208 14 10.55 14 10C14 9.45 13.8042 8.97917 13.4125 8.5875C13.0208 8.19583 12.55 8 12 8C11.45 8 10.9792 8.19583 10.5875 8.5875C10.1958 8.97917 10 9.45 10 10C10 10.55 10.1958 11.0208 10.5875 11.4125C10.9792 11.8042 11.45 12 12 12ZM12 22C9.31667 19.7167 7.3125 17.5958 5.9875 15.6375C4.6625 13.6792 4 11.8667 4 10.2C4 7.7 4.80417 5.70833 6.4125 4.225C8.02083 2.74167 9.88333 2 12 2C14.1167 2 15.9792 2.74167 17.5875 4.225C19.1958 5.70833 20 7.7 20 10.2C20 11.8667 19.3375 13.6792 18.0125 15.6375C16.6875 17.5958 14.6833 19.7167 12 22Z"
-                    fill="#FFFFFF"
-                  />
-                </svg>
-              </address>
-            </a>
-          </div>
-
-          <div class="heading-content-contact-item">
-            <a
-              href="https://www.linkedin.com/in/florencekang"
-              target="_blank"
-              class="align"
-              >Profil Linkedin
-              <svg
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="icons"
-              >
-                <path
-                  d="M7.36123 19.2H3.87748V7.98374H7.36123V19.2ZM5.61748 6.45374C4.50373 6.45374 3.59998 5.53124 3.59998 4.41749C3.59998 3.88124 3.81373 3.37124 4.19248 2.99249C4.57123 2.61374 5.08498 2.39999 5.61748 2.39999C6.14998 2.39999 6.66373 2.61374 7.04248 2.99249C7.42123 3.37124 7.63498 3.88499 7.63498 4.41749C7.63498 5.53124 6.73123 6.45374 5.61748 6.45374ZM20.3962 19.2H16.92V13.74C16.92 12.4387 16.8937 10.77 15.1087 10.77C13.2975 10.77 13.02 12.1837 13.02 13.6462V19.2H9.53998V7.98374H12.8812V9.51374H12.93C13.395 8.63249 14.5312 7.70249 16.2262 7.70249C19.7512 7.70249 20.4 10.0237 20.4 13.0387V19.2H20.3962Z"
-                  fill="#FFFFFF"
-                />
-              </svg>
-            </a>
-            <a
-              href="https://github.com/FlorenceKANG"
-              target="_blank"
-              class="align"
-              >Profil GitHub
-              <svg
-                width="42"
-                height="42"
-                viewBox="0 0 19 19"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6.22125 14.6025C6.22125 14.6775 6.135 14.7375 6.02625 14.7375C5.9025 14.7487 5.81625 14.6887 5.81625 14.6025C5.81625 14.5275 5.9025 14.4675 6.01125 14.4675C6.12375 14.4562 6.22125 14.5162 6.22125 14.6025ZM5.055 14.4337C5.02875 14.5087 5.10375 14.595 5.21625 14.6175C5.31375 14.655 5.42625 14.6175 5.44875 14.5425C5.47125 14.4675 5.4 14.3812 5.2875 14.3475C5.19 14.3212 5.08125 14.3587 5.055 14.4337ZM6.7125 14.37C6.60375 14.3962 6.52875 14.4675 6.54 14.5537C6.55125 14.6287 6.64875 14.6775 6.76125 14.6512C6.87 14.625 6.945 14.5537 6.93375 14.4787C6.9225 14.4075 6.82125 14.3587 6.7125 14.37ZM9.18 0C3.97875 0 0 3.94875 0 9.15C0 13.3087 2.6175 16.8675 6.35625 18.12C6.83625 18.2062 7.005 17.91 7.005 17.6662C7.005 17.4337 6.99375 16.1512 6.99375 15.3637C6.99375 15.3637 4.36875 15.9262 3.8175 14.2462C3.8175 14.2462 3.39 13.155 2.775 12.8737C2.775 12.8737 1.91625 12.285 2.835 12.2962C2.835 12.2962 3.76875 12.3712 4.2825 13.2637C5.10375 14.7112 6.48 14.295 7.01625 14.0475C7.1025 13.4475 7.34625 13.0312 7.61625 12.7837C5.52 12.5512 3.405 12.2475 3.405 8.64C3.405 7.60875 3.69 7.09125 4.29 6.43125C4.1925 6.1875 3.87375 5.1825 4.3875 3.885C5.17125 3.64125 6.975 4.8975 6.975 4.8975C7.725 4.6875 8.53125 4.57875 9.33 4.57875C10.1287 4.57875 10.935 4.6875 11.685 4.8975C11.685 4.8975 13.4888 3.6375 14.2725 3.885C14.7863 5.18625 14.4675 6.1875 14.37 6.43125C14.97 7.095 15.3375 7.6125 15.3375 8.64C15.3375 12.2587 13.1288 12.5475 11.0325 12.7837C11.3775 13.08 11.67 13.6425 11.67 14.5237C11.67 15.7875 11.6588 17.3512 11.6588 17.6587C11.6588 17.9025 11.8313 18.1987 12.3075 18.1125C16.0575 16.8675 18.6 13.3087 18.6 9.15C18.6 3.94875 14.3812 0 9.18 0ZM3.645 12.9337C3.59625 12.9712 3.6075 13.0575 3.67125 13.1287C3.73125 13.1887 3.8175 13.215 3.86625 13.1662C3.915 13.1287 3.90375 13.0425 3.84 12.9712C3.78 12.9112 3.69375 12.885 3.645 12.9337ZM3.24 12.63C3.21375 12.6787 3.25125 12.7387 3.32625 12.7762C3.38625 12.8137 3.46125 12.8025 3.4875 12.75C3.51375 12.7012 3.47625 12.6412 3.40125 12.6037C3.32625 12.5812 3.26625 12.5925 3.24 12.63ZM4.455 13.965C4.395 14.0137 4.4175 14.1262 4.50375 14.1975C4.59 14.2837 4.69875 14.295 4.7475 14.235C4.79625 14.1862 4.77375 14.0737 4.69875 14.0025C4.61625 13.9162 4.50375 13.905 4.455 13.965ZM4.0275 13.4137C3.9675 13.4512 3.9675 13.5487 4.0275 13.635C4.0875 13.7212 4.18875 13.7587 4.2375 13.7212C4.2975 13.6725 4.2975 13.575 4.2375 13.4887C4.185 13.4025 4.0875 13.365 4.0275 13.4137Z"
-                  fill="#6348A3"
-                />
-              </svg>
-            </a>
-          </div>
+            </address>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/florencekang"
+            target="_blank"
+            class="align"
+            >Profil Linkedin
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="icons"
+            >
+              <path
+                d="M7.36123 19.2H3.87748V7.98374H7.36123V19.2ZM5.61748 6.45374C4.50373 6.45374 3.59998 5.53124 3.59998 4.41749C3.59998 3.88124 3.81373 3.37124 4.19248 2.99249C4.57123 2.61374 5.08498 2.39999 5.61748 2.39999C6.14998 2.39999 6.66373 2.61374 7.04248 2.99249C7.42123 3.37124 7.63498 3.88499 7.63498 4.41749C7.63498 5.53124 6.73123 6.45374 5.61748 6.45374ZM20.3962 19.2H16.92V13.74C16.92 12.4387 16.8937 10.77 15.1087 10.77C13.2975 10.77 13.02 12.1837 13.02 13.6462V19.2H9.53998V7.98374H12.8812V9.51374H12.93C13.395 8.63249 14.5312 7.70249 16.2262 7.70249C19.7512 7.70249 20.4 10.0237 20.4 13.0387V19.2H20.3962Z"
+                fill="#FFFFFF"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://github.com/FlorenceKANG"
+            target="_blank"
+            class="align"
+            >Profil GitHub
+            <svg
+              width="42"
+              height="42"
+              viewBox="0 0 19 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.22125 14.6025C6.22125 14.6775 6.135 14.7375 6.02625 14.7375C5.9025 14.7487 5.81625 14.6887 5.81625 14.6025C5.81625 14.5275 5.9025 14.4675 6.01125 14.4675C6.12375 14.4562 6.22125 14.5162 6.22125 14.6025ZM5.055 14.4337C5.02875 14.5087 5.10375 14.595 5.21625 14.6175C5.31375 14.655 5.42625 14.6175 5.44875 14.5425C5.47125 14.4675 5.4 14.3812 5.2875 14.3475C5.19 14.3212 5.08125 14.3587 5.055 14.4337ZM6.7125 14.37C6.60375 14.3962 6.52875 14.4675 6.54 14.5537C6.55125 14.6287 6.64875 14.6775 6.76125 14.6512C6.87 14.625 6.945 14.5537 6.93375 14.4787C6.9225 14.4075 6.82125 14.3587 6.7125 14.37ZM9.18 0C3.97875 0 0 3.94875 0 9.15C0 13.3087 2.6175 16.8675 6.35625 18.12C6.83625 18.2062 7.005 17.91 7.005 17.6662C7.005 17.4337 6.99375 16.1512 6.99375 15.3637C6.99375 15.3637 4.36875 15.9262 3.8175 14.2462C3.8175 14.2462 3.39 13.155 2.775 12.8737C2.775 12.8737 1.91625 12.285 2.835 12.2962C2.835 12.2962 3.76875 12.3712 4.2825 13.2637C5.10375 14.7112 6.48 14.295 7.01625 14.0475C7.1025 13.4475 7.34625 13.0312 7.61625 12.7837C5.52 12.5512 3.405 12.2475 3.405 8.64C3.405 7.60875 3.69 7.09125 4.29 6.43125C4.1925 6.1875 3.87375 5.1825 4.3875 3.885C5.17125 3.64125 6.975 4.8975 6.975 4.8975C7.725 4.6875 8.53125 4.57875 9.33 4.57875C10.1287 4.57875 10.935 4.6875 11.685 4.8975C11.685 4.8975 13.4888 3.6375 14.2725 3.885C14.7863 5.18625 14.4675 6.1875 14.37 6.43125C14.97 7.095 15.3375 7.6125 15.3375 8.64C15.3375 12.2587 13.1288 12.5475 11.0325 12.7837C11.3775 13.08 11.67 13.6425 11.67 14.5237C11.67 15.7875 11.6588 17.3512 11.6588 17.6587C11.6588 17.9025 11.8313 18.1987 12.3075 18.1125C16.0575 16.8675 18.6 13.3087 18.6 9.15C18.6 3.94875 14.3812 0 9.18 0ZM3.645 12.9337C3.59625 12.9712 3.6075 13.0575 3.67125 13.1287C3.73125 13.1887 3.8175 13.215 3.86625 13.1662C3.915 13.1287 3.90375 13.0425 3.84 12.9712C3.78 12.9112 3.69375 12.885 3.645 12.9337ZM3.24 12.63C3.21375 12.6787 3.25125 12.7387 3.32625 12.7762C3.38625 12.8137 3.46125 12.8025 3.4875 12.75C3.51375 12.7012 3.47625 12.6412 3.40125 12.6037C3.32625 12.5812 3.26625 12.5925 3.24 12.63ZM4.455 13.965C4.395 14.0137 4.4175 14.1262 4.50375 14.1975C4.59 14.2837 4.69875 14.295 4.7475 14.235C4.79625 14.1862 4.77375 14.0737 4.69875 14.0025C4.61625 13.9162 4.50375 13.905 4.455 13.965ZM4.0275 13.4137C3.9675 13.4512 3.9675 13.5487 4.0275 13.635C4.0875 13.7212 4.18875 13.7587 4.2375 13.7212C4.2975 13.6725 4.2975 13.575 4.2375 13.4887C4.185 13.4025 4.0875 13.365 4.0275 13.4137Z"
+                fill="#6348A3"
+              />
+            </svg>
+          </a>
         </div>
-      </div>
+      </article>
     </header>
 
     <!-- Corps -->
-    <main class="content">
+    <main>
       <!-- La partie gauche -->
-      <section class="content-left">
+      <section>
         <!-- Expérience -->
-        <div class="content-left-block">
-          <div class="content-left-block-title">
+        <div class="flex-col gap-12">
+          <div class="title-dot">
             <h3>Expérience</h3>
             <div class="dot"></div>
           </div>
-          <div class="content-left-block-body">
-            <div class="block-item">
+          <article class="left-block">
+            <article class="gap-8">
               <h4>
                 <time datetime="2025-03">03/2025</time> -
                 <time datetime="2025-12">12/2025</time> Développeuse Front &
@@ -179,8 +174,8 @@
                   en méthodologie agile
                 </li>
               </ul>
-              <div class="list-links">
-                <div class="list-links-item">
+              <footer class="align">
+                <a href="https://qualiextra.com" target="_blank" class="align">
                   <svg
                     width="30"
                     height="30"
@@ -193,9 +188,13 @@
                       fill="#6348A3"
                     />
                   </svg>
-                  <a href="https://qualiextra.com" target="_blank">Site web</a>
-                </div>
-                <div class="list-links-item">
+                  Site web
+                </a>
+                <a
+                  href="https://apps.apple.com/fr/app/qualiextra/id6742256797"
+                  target="_blank"
+                  class="align"
+                >
                   <svg
                     width="30"
                     height="30"
@@ -208,14 +207,13 @@
                       fill="#6348A3"
                     />
                   </svg>
-
-                  <a
-                    href="https://apps.apple.com/fr/app/qualiextra/id6742256797"
-                    target="_blank"
-                    >App Store</a
-                  >
-                </div>
-                <div class="list-links-item">
+                  App Store</a
+                >
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.qualiextra.production&pcampaignid=web_share"
+                  target="_blank"
+                  class="align"
+                >
                   <svg
                     width="30"
                     height="30"
@@ -228,16 +226,11 @@
                       fill="#6348A3"
                     />
                   </svg>
-
-                  <a
-                    href="https://play.google.com/store/apps/details?id=com.qualiextra.production&pcampaignid=web_share"
-                    target="_blank"
-                    >Google Play</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="block-item">
+                  Google Play</a
+                >
+              </footer>
+            </article>
+            <article class="gap-8">
               <h4>
                 <time datetime="2025-02">02/2025</time> Développeur Web
                 Front-end
@@ -274,58 +267,60 @@
                   Product Owner et Lead Back-end
                 </li>
               </ul>
-            </div>
-          </div>
+            </article>
+          </article>
         </div>
 
         <!-- Formation et diplôme -->
-        <div class="content-left-block">
-          <div class="content-left-block-title">
+        <div class="flex-col gap-12">
+          <div class="title-dot">
             <h3>Formation et Diplôme</h3>
             <div class="dot"></div>
           </div>
-          <div class="content-left-block-body">
-            <div class="block-item">
-              <h4>
-                <time datetime="2024-09">09/2024</time> -
-                <time datetime="2025-04">04/2025</time> Ecole O'clock
-              </h4>
-              <p>Téléprésentiel - Libellisée Grande école du numérique</p>
-              <ul class="list">
-                <li>
-                  <span class="bold">Titre RCNP niveau 5 </span>- Développeur
-                  Web et Web Mobile
-                </li>
-                <li>Formation intensive fullstack (front & back)</li>
-                <li>
-                  <span class="bold">Certification Opquast </span>- Intégrer les
-                  règles et le vocabulaire assurance qualité web dans sa
-                  pratique professionnelle
-                </li>
-              </ul>
-            </div>
-            <div class="block-item">
-              <h4>
-                <time datetime="2019">2019</time> -
-                <time datetime="2020">2020</time> IUT de Créteil-Vitry
-              </h4>
-              <ul class="list">
-                <li>
-                  Diplôme - Licence professionnelle Chimie, Analyse et Contrôle
-                  des matières premières et des produits formulés
-                </li>
-              </ul>
-            </div>
-          </div>
+          <article>
+            <article class="left-block">
+              <article class="gap-8">
+                <h4>
+                  <time datetime="2024-09">09/2024</time> -
+                  <time datetime="2025-04">04/2025</time> Ecole O'clock
+                </h4>
+                <p>Téléprésentiel - Libellisée Grande école du numérique</p>
+                <ul class="list">
+                  <li>
+                    <span class="bold">Titre RCNP niveau 5 </span>- Développeur
+                    Web et Web Mobile
+                  </li>
+                  <li>Formation intensive fullstack (front & back)</li>
+                  <li>
+                    <span class="bold">Certification Opquast </span>- Intégrer
+                    les règles et le vocabulaire assurance qualité web dans sa
+                    pratique professionnelle
+                  </li>
+                </ul>
+              </article>
+              <article class="gap-8">
+                <h4>
+                  <time datetime="2019">2019</time> -
+                  <time datetime="2020">2020</time> IUT de Créteil-Vitry
+                </h4>
+                <ul class="list">
+                  <li>
+                    Diplôme - Licence professionnelle Chimie, Analyse et
+                    Contrôle des matières premières et des produits formulés
+                  </li>
+                </ul>
+              </article>
+            </article>
+          </article>
         </div>
       </section>
 
       <!-- La partie droite -->
-      <section class="content-right">
+      <aside class="background">
         <!-- Contact caché si width < 1024px -->
-        <div class="content-right-block hidden">
+        <article class="end gap-16 hidden">
           <h3 class="reverse">Contact</h3>
-          <div class="content-right-block-body">
+          <div class="flex-col end gap-8">
             <a href="tel:+33649956890" class="align"
               >06.49.95.68.90
               <svg
@@ -414,12 +409,12 @@
               </svg>
             </a>
           </div>
-        </div>
+        </article>
 
         <!-- Hards skills -->
-        <div class="content-right-block">
+        <article class="end gap-16">
           <h3 class="reverse">Hard skills</h3>
-          <div class="content-right-block-body start">
+          <div class="flex-col start gap-8">
             <p class="bold">Front-End :</p>
             <ul class="list">
               <li>React, Next.js</li>
@@ -441,7 +436,6 @@
               <li>Figma</li>
               <li>TailwindCSS, ChakraUI, Bulma</li>
             </ul>
-
             <p class="bold">Outils & Méthodologies :</p>
             <ul class="list">
               <li>Git/GitHub</li>
@@ -450,12 +444,12 @@
               <li>TanStack Query</li>
             </ul>
           </div>
-        </div>
+        </article>
 
         <!-- Softs skills -->
-        <div class="content-right-block">
+        <article class="end gap-16">
           <h3 class="reverse">Soft skills</h3>
-          <ul class="content-right-block-body start">
+          <ul class="start gap-8">
             <li class="align">
               <svg
                 width="30"
@@ -532,8 +526,8 @@
               Capacité d'écoute
             </li>
           </ul>
-        </div>
-      </section>
+        </article>
+      </aside>
     </main>
   </body>
 </html>
